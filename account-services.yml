@@ -1,0 +1,13 @@
+server:
+  port: 8081 
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/db_account 
+
+# Requerimiento: Manejo de trazas con Logback
+logging:
+  level:
+    root: INFO
+    com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
