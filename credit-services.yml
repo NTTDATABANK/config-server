@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/db_credit 
+
+# Requerimiento: Manejo de trazas con Logback
+logging:
+  level:
+    root: INFO
+    com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
+
+transaction:
+  service:
+    url: http://localhost:8083
