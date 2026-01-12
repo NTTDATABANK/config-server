@@ -11,3 +11,7 @@ logging:
   level:
     root: INFO
     com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
+
+transaction:
+  service:
+    url: http://localhost:8083
