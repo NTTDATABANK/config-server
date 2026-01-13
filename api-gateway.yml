@@ -6,6 +6,10 @@ spring:
     name: gateway-service
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true           # <--- ESTO ES VITAL
+          lower-case-service-id: true
       routes:
         - id: customer-service
           uri: lb://CUSTOMER-SERVICE
