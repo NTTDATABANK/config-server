@@ -1,5 +1,5 @@
 server:
-  port: 8089
+  port: 8080
 
 spring:
   application:
@@ -49,8 +49,6 @@ eureka:
 # Requerimiento: Manejo de trazas con Logback
 logging:
   level:
-    root: DEBUG
+    root: INFO
     com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.http.server.reactive: DEBUG
-    org.springframework.web.reactive: DEBUG
+    
