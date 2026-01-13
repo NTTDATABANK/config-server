@@ -51,3 +51,6 @@ logging:
   level:
     root: INFO
     com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
