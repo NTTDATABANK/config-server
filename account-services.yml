@@ -9,9 +9,16 @@ spring:
 # Requerimiento: Manejo de trazas con Logback
 logging:
   level:
-    root: DEBUG
-    com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
+    root: INFO
+    com.nttdata.bank: INFO # Nivel adecuado para ver tus trazas
 
 transaction:
   service:
     url: http://localhost:8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true    

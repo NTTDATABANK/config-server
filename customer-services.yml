@@ -10,3 +10,10 @@ logging:
   level:
     root: INFO
     com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true    
