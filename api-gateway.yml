@@ -41,3 +41,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
+
+# Requerimiento: Manejo de trazas con Logback
+logging:
+  level:
+    root: INFO
+    com.nttdata.bank: DEBUG # Nivel adecuado para ver tus trazas
