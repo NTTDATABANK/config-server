@@ -46,7 +46,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-# Requerimiento: Manejo de trazas con Logback
+# Requerimiento: Manejo de trazas con Logback 
 logging:
   level:
     root: INFO
